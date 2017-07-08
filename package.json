@@ -4,8 +4,11 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start:sender": "ng serve --app sender",
+    "start:reciever": "ng serve --app reciever",
+    "build": "npm run buid:sender && npm run build:reciever",
+    "build:sender": "ng build --app sender",
+    "build:reciever": "ng build --app reciever",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
