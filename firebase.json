@@ -1,0 +1,21 @@
+{
+  "public": "dist",
+  "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "e2e/**",
+      "src/**",
+      "karma.conf.js",
+      "protractor.conf.js",
+      "README.md",
+      "tsconfig.json",
+      "tslint.json"
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "rewrites": [ {
+      "source": "/",
+      "destination": "/sender/index.html"
+    } ]
+}

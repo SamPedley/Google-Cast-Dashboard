@@ -5,13 +5,14 @@
   "scripts": {
     "ng": "ng",
     "start:sender": "ng serve --app sender",
-    "start:reciever": "ng serve --app reciever",
-    "build": "npm run buid:sender && npm run build:reciever",
-    "build:sender": "ng build --app sender",
-    "build:reciever": "ng build --app reciever",
+    "start:receiver": "ng serve --app receiver",
+    "build": "npm run build:sender && npm run build:receiver",
+    "build:sender": "ng build --app sender --base-href /sender/",
+    "build:receiver": "ng build --app receiver --base-href /receiver/",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "npm run build && firebase deploy"
   },
   "private": true,
   "dependencies": {
